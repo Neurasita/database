@@ -1,4 +1,6 @@
 -- name: CountRoleByID :one
-SELECT COUNT(*) FROM roles
+SELECT COUNT(*)
+FROM
+    roles
 WHERE
     id = $1;
